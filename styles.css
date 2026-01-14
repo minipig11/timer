@@ -16,6 +16,7 @@ body {
     padding: 2rem;
     border-radius: 20px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    height: auto;
 }
 
 .container2 {
@@ -23,19 +24,21 @@ body {
     padding: 2rem;
     border-radius: 20px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: auto;
+    position: relative;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensures full viewport height for vertical centering */
 }
 
 .timer {
     text-align: center;
+    transform: translate(0, -40%);
 }
 
 .time-display {
-    font-size: 4rem;
+    font-size: 1.5rem; /* Reduced font size to fit better */
     font-weight: 300;
     color: #1d1d1f;
     margin-bottom: 2rem;
@@ -49,8 +52,8 @@ body {
 }
 
 .btn {
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
+    padding: 0.6rem 1.2rem; /* Reduced padding for smaller buttons */
+    font-size: 0.9rem; /* Slightly smaller font size */
     border: none;
     border-radius: 8px;
     cursor: pointer;
